@@ -1,0 +1,91 @@
+PODS:
+  - AppAuth (1.4.0):
+    - AppAuth/Core (= 1.4.0)
+    - AppAuth/ExternalUserAgent (= 1.4.0)
+  - AppAuth/Core (1.4.0)
+  - AppAuth/ExternalUserAgent (1.4.0)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GTMAppAuth (1.0.0):
+    - AppAuth/Core (~> 1.0)
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.4.0):
+    - GTMSessionFetcher/Full (= 1.4.0)
+  - GTMSessionFetcher/Core (1.4.0)
+  - GTMSessionFetcher/Full (1.4.0):
+    - GTMSessionFetcher/Core (= 1.4.0)
+  - mongo-embedded-c-driver (1.13.0-4.0.4)
+  - mongo_embedded (4.0.4)
+  - mongoc_embedded (4.0.4):
+    - mongo-embedded-c-driver (~> 1.13.0-4.0.4)
+    - mongo_embedded (~> 4.0.4)
+  - MongoMobile (0.1.0):
+    - mongo_embedded (~> 4.0.4)
+    - mongoc_embedded (~> 4.0.4)
+    - MongoSwift (~> 0.1.0)
+  - MongoSwift (0.1.0):
+    - mongo-embedded-c-driver (~> 1.13.0-4.0.0)
+  - StitchCore (6.1.0):
+    - StitchCoreSDK (= 6.1.0)
+  - StitchCoreLocalMongoDBService (6.1.0):
+    - MongoMobile (= 0.1.0)
+    - StitchCoreSDK (= 6.1.0)
+  - StitchCoreRemoteMongoDBService (6.1.0):
+    - StitchCoreLocalMongoDBService (= 6.1.0)
+    - StitchCoreSDK (= 6.1.0)
+  - StitchCoreSDK (6.1.0):
+    - MongoSwift (= 0.1.0)
+  - StitchRemoteMongoDBService (6.1.0):
+    - StitchCore (= 6.1.0)
+    - StitchCoreRemoteMongoDBService (= 6.1.0)
+  - StitchSDK (6.1.0):
+    - StitchSDK/StitchSDK (= 6.1.0)
+  - StitchSDK/StitchRemoteMongoDBService (6.1.0):
+    - StitchRemoteMongoDBService (= 6.1.0)
+  - StitchSDK/StitchSDK (6.1.0):
+    - StitchSDK/StitchRemoteMongoDBService
+
+DEPENDENCIES:
+  - GoogleSignIn
+  - StitchSDK (~> 6.1.0)
+
+SPEC REPOS:
+  trunk:
+    - AppAuth
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - mongo-embedded-c-driver
+    - mongo_embedded
+    - mongoc_embedded
+    - MongoMobile
+    - MongoSwift
+    - StitchCore
+    - StitchCoreLocalMongoDBService
+    - StitchCoreRemoteMongoDBService
+    - StitchCoreSDK
+    - StitchRemoteMongoDBService
+    - StitchSDK
+
+SPEC CHECKSUMS:
+  AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
+  GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  mongo-embedded-c-driver: b46360baa15fc142baae80628822f26663220bde
+  mongo_embedded: e413134eb6b60544e7278add03007f8fe384a00c
+  mongoc_embedded: 41aadbb756b07070d6f0471192a84750cb42c580
+  MongoMobile: 988e8d2fd322761d6358570dde8a2b3d44801823
+  MongoSwift: e20f86eae1beb06bbba49c2d73bb570961cc4c85
+  StitchCore: 997a2163b4ebf661dd3e92a4be08391acf078659
+  StitchCoreLocalMongoDBService: 2dfa73e67f906dca07b52612bdae197eb42e1e07
+  StitchCoreRemoteMongoDBService: 2987e9de1d8c6e55234feaa76ddd0712a935e6cf
+  StitchCoreSDK: 2c789433bd72429b4a39d8d481008037bc8bb4d4
+  StitchRemoteMongoDBService: 7a3fb5e8e6d74e98e303f52b0af0cf246d07b9bf
+  StitchSDK: f534f7db2d3b0f29d30a8fe0b010bf92ec65e385
+
+PODFILE CHECKSUM: a666d8faf52b3d08562566a447aeed3dbfdc950c
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SignIntoMongoWithGoogle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simone-hutsch-hacrC8FB7ls-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="aCQ-3v-yhp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0x4-oo-jYa">
+                                <rect key="frame" x="49" y="423.5" width="316" height="49"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="vMe-PU-0lb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Log In with Google"/>
+                                <connections>
+                                    <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GE9-kK-D2r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLm-0l-kC0">
+                                <rect key="frame" x="49" y="800" width="316" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="Photo by Simone Hutsch on Unsplash">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="photographerLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JCH-18-7ZO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0x4-oo-jYa" secondAttribute="trailing" constant="49" id="PeJ-qo-7De"/>
+                            <constraint firstItem="dLm-0l-kC0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="QL6-wj-w7J"/>
+                            <constraint firstItem="0x4-oo-jYa" firstAttribute="centerX" secondItem="aCQ-3v-yhp" secondAttribute="centerX" id="QZ1-91-zO3"/>
+                            <constraint firstItem="aCQ-3v-yhp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RGG-RM-a5o"/>
+                            <constraint firstAttribute="bottom" secondItem="aCQ-3v-yhp" secondAttribute="bottom" id="Ytt-QE-Xb5"/>
+                            <constraint firstItem="0x4-oo-jYa" firstAttribute="centerY" secondItem="aCQ-3v-yhp" secondAttribute="centerY" id="aoV-xO-rId"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dLm-0l-kC0" secondAttribute="bottom" constant="35" id="h5b-4s-2Sa"/>
+                            <constraint firstItem="0x4-oo-jYa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="jbS-hI-8pO"/>
+                            <constraint firstItem="aCQ-3v-yhp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pmd-uA-TsW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dLm-0l-kC0" secondAttribute="trailing" constant="49" id="pob-eF-yHa"/>
+                            <constraint firstItem="aCQ-3v-yhp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qgc-fV-9SZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="simone-hutsch-hacrC8FB7ls-unsplash" width="3573" height="4821"/>
+    </resources>
+</document>
